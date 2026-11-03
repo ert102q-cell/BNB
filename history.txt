@@ -1,0 +1,17 @@
+ 
+   80  mkdir BNB
+   81  cd BNB
+   82  touch .gitignore
+   83  git clone git@github.com:ert102q-cell/BNB.git
+   84  cd BNB
+   85  git chekout -b feature
+   86  git checkout -b feature
+   87  echo "# My BNB" > README.md
+   88  echo "*.log" >> .gitignore
+   89  git add README.md .gitignore
+   90  git commit -m "BNB chain"
+   91  git push -u origin feature
+   92  git commit --amend -m "BNB Smart Chain"
+   93  git checkout main 
+   94  git merge feature
+   95  history > history.txt
